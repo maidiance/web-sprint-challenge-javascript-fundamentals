@@ -37,6 +37,7 @@ A closure happens whenever something (most usually, a function) in an internal s
 Window binding: this will return the window or the global object in node, unless we are in 'strict' mode in which case it will return undefined. Implicit mode: look left of the dot when the function is invoked for what 'this' is. Explicit binding: We assign 'this' keyword when using .call, .apply, or .bind. New binding: we use a constructor function with the 'new' keyword; "this" points to the new object created.
 
 5. Why do we need super() in an extended class?
+super() is how we inherit the parent class's attributes and methods. It is one half of what allows us to skip the prototyping and call() of the 'old' way with function syntax instead of class syntax.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
