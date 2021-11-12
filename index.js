@@ -16,8 +16,9 @@ function myFunction() {
 myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
-
-
+/*
+The myFunction call itself calls the nestedFunction() call; this is what then takes the internal variable from the external function. This happens due to closure and is allowed only one-way - that is to say that functions inside of other functions can take variables from outside of their scope, but functions on the outside cannot take variables from the inside nested functions.
+*/
 
 
 
