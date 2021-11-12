@@ -31,7 +31,7 @@ While .map and .filter automatically return new arrays, .reduce only returns a s
 A callback function is a function that is passed in as a parameter for a higher order function; a higher order function takes a callback function (or more) as parameters.
 
 3. Explain what a closure is.
-
+A closure happens whenever something (most usually, a function) in an internal scope takes a variable's value from its external scope.
 
 4. Describe the four principles of the 'this' keyword.
 
