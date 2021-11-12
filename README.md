@@ -34,6 +34,7 @@ A callback function is a function that is passed in as a parameter for a higher 
 A closure happens whenever something (most usually, a function) in an internal scope takes a variable's value from its external scope.
 
 4. Describe the four principles of the 'this' keyword.
+Window binding: this will return the window or the global object in node, unless we are in 'strict' mode in which case it will return undefined. Implicit mode: look left of the dot when the function is invoked for what 'this' is. Explicit binding: We assign 'this' keyword when using .call, .apply, or .bind. New binding: we use a constructor function with the 'new' keyword; "this" points to the new object created.
 
 5. Why do we need super() in an extended class?
 
