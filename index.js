@@ -61,12 +61,18 @@ const zooAnimals = [
   */
 
   function animalNames(array){
-    const displayNames = array.map(function(item) {
-      return `name: ${item.animal_name}, scientific: ${item.scientific_name}`;
+    // I would do this with .map normally
+    // const displayNames = array.map(function(item) {
+    //   return `name: ${item.animal_name}, scientific: ${item.scientific_name}`;
+    // });
+
+    const displayNames = [];
+    array.forEach(function(item){
+      displayNames.push(`name: ${item.animal_name}, scientific: ${item.scientific_name}`);
     });
     return displayNames;
   }
-  console.log(animalNames(zooAnimals));
+  //console.log(animalNames(zooAnimals));
 
   /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
   The zoo needs a list of all their animal's names converted to lower case. 
@@ -74,10 +80,13 @@ const zooAnimals = [
   For example: ['jackal, asiatic', .....]
   */
 
-  function lowerCaseNames(/*Your Code Here*/){
-    /*Your Code Here*/
+  function lowerCaseNames(array){
+    const lowerCaseNames = array.map(function(item){
+      return `${item.animal_name.toLowerCase()}`;
+    });
+    return lowerCaseNames;
   }
-  
+  console.log(lowerCaseNames(zooAnimals));
   
   /* 🦁🦁🦁 Request 3: .filter() 🦁🦁🦁
   The zoo is concerned about animals with a lower population count. 
