@@ -25,11 +25,13 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read.
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
-While .map and .filter automatically return new arrays, .reduce only returns a single value; .map requires a return and .filter requires a conditional (just true or false). .map could be used for making a new array of numbers where each number is the given array's values multiplied by 2. .filter would be good for checking, for example, which array items had a property that had 'beach': true. .reduce() would be good for summing up an array's values (perhaps to be averaged later).
+While .map and .filter automatically return new arrays, .reduce only returns a single value; .map requires a return and .filter requires a conditional (just true or false) as well as a return statement. .map could be used for making a new array of numbers where each number is the given array's values multiplied by 2. .filter would be good for checking, for example, which array items had a property that had 'beach': true. .reduce() would be good for summing up an array's values (perhaps to be averaged later).
 
 2. Explain the difference between a callback and a higher order function.
+A callback function is a function that is passed in as a parameter for a higher order function; a higher order function takes a callback function (or more) as parameters.
 
 3. Explain what a closure is.
+
 
 4. Describe the four principles of the 'this' keyword.
 
