@@ -99,7 +99,7 @@ const zooAnimals = [
     });
     return lowPop;
   }
-  console.log(lowPopulationAnimals(zooAnimals));
+  //console.log(lowPopulationAnimals(zooAnimals));
 
   /* 🦁🦁🦁 Request 4: .reduce() 🦁🦁🦁
   The zoo needs to know their total animal population across the United States. 
@@ -107,9 +107,13 @@ const zooAnimals = [
   Remember the reduce method takes two arguments: a callback (which itself takes two args - the accumulator and the item), and an initial value for the count.
   */
 
-  function USApop(/*Your Code Here*/){
-    /*Your Code Here*/
+  function USApop(array){
+    const pop = array.reduce(function(acc, item){
+      return acc + item.population;
+    }, 0);
+    return pop;
   }
+  // console.log(USApop(zooAnimals));
   
   
   // 🦁🦁🦁 Callbacks 🦁🦁🦁  
